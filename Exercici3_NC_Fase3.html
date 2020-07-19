@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Exercici3_NC_Fase3</title>
+       
+    <script>
+        var vocal = "a";
+        var hh=1;
+        var ii=0;
+        var change ="4"
+        var SubElemento="";
+        var ArrayCiutatsModificades = new Array();
+        var ArrayCiutat =  new Array();
+        ArrayCiutat.push("Barcelona");
+        ArrayCiutat.push("Madrid");
+        ArrayCiutat.push("Valencia");
+        ArrayCiutat.push("Malaga");
+        ArrayCiutat.push("Cadis");
+        ArrayCiutat.push("Santander");
+        var TotalElements=0;
+        TotalElements = ArrayCiutat.length;
+
+        for  (ii=1; ii<=TotalElements; ii++){
+            var LonElement=0
+            LonElement=ArrayCiutat[(ii-1)].length;
+            SubElemento = "";
+            
+            for (hh=1; hh<=LonElement; hh++){
+                 resul = ArrayCiutat[(ii-1)].charAt(hh-1)
+
+                if(resul == vocal){
+                   resul = change 
+                }
+                SubElemento=SubElemento+resul
+                 
+             }
+             // document.write("<br>" + SubElemento + "</br>" ); 
+             ArrayCiutatsModificades.push(SubElemento);
+
+            }
+         document.write("<br>" + ArrayCiutatsModificades.sort() + "  "+ "</br>" ); 
+         
+
+
+
+
+           
+    /*
+        for (hh=0; hh<(ArrayCiutat.length-1); hh++) {
+            resul += ArrayCiutat.charAt(hh);
+            resul += "-";
+            document.write("<br>" + hh + "</br>");
+        }
+        resul += ArrayCiutat.charAt(ArrayCiutat.length-1);
+        document.write("<br>" + resul+ "</br>");
+ 
+        document.write("<br>" + ArrayCiutat + "</br>");
+        var ordenades="";
+        ordenades = ArrayCiutat.sort();
+        document.write("<br>" + ordenades + "</br>");
+
+        var inici=0;
+        for (inici=0; inici<=4; inici++) {
+            ArrayCiutat[inici]=prompt('dime la ciudad número: '+ (inici+1));
+        }
+        
+        for (inici=0; inici<=5; inici++) {
+            document.write("<br>" + ArrayCiutat[inici] + "<br>");
+        }
+        
+    */
+   
+    </script>
+</head>
+<body>
+</body>
+</html>

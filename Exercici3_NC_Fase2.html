@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Exercici3_NC_Fase2</title>
+       
+    <script>
+        var nomciutat00 = "Barcelona";
+        var nomciutat01 = "Madrid";
+        var nomciutat02 = "Valencia";
+        var nomciutat03 = "Malaga";
+        var nomciutat04 = "Cadis";
+        var nomciutat05 = "Santander";
+      //  document.write(nomciutat05);
+     
+       
+        var ArrayCiutat =  new Array(6);
+        ArrayCiutat.push(nomciutat00);
+        ArrayCiutat.push(nomciutat01);
+        ArrayCiutat.push(nomciutat02);
+        ArrayCiutat.push(nomciutat03);
+        ArrayCiutat.push(nomciutat04);
+        ArrayCiutat.push(nomciutat05);
+
+        document.write("<br>" + ArrayCiutat + "</br>");
+        var ordenades="";
+        ordenades = ArrayCiutat.sort();
+        document.write("<br>" + ordenades + "</br>");
+
+
+/*
+        var inici=0;
+        for (inici=0; inici<=4; inici++) {
+            ArrayCiutat[inici]=prompt('dime la ciudad número: '+ (inici+1));
+        }
+        
+        for (inici=0; inici<=5; inici++) {
+            document.write("<br>" + ArrayCiutat[inici] + "<br>");
+        }
+        
+        */
+   
+    </script>
+</head>
+<body>
+</body>
+</html>
